@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mireflecta Tools</title>
+    <meta name="description" content="Simple, local-first tools for structured digital work.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="system-theme">
+    <div class="background-radial"></div>
+    
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="brand">
+                    <h1 id="page-title">Mireflecta Tools</h1>
+                    <p id="page-subtitle" class="subtitle">Simple tools to structure your files, notes, and workflows.</p>
+                </div>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="lang-select" id="label-language" class="sr-only">Language</label>
+                        <select id="lang-select" class="custom-select">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                            <option value="ru">RU</option>
+                            <option value="de">DE</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="theme-select" id="label-theme" class="sr-only">Theme</label>
+                        <select id="theme-select" class="custom-select">
+                            <option value="system" id="opt-system">System</option>
+                            <option value="light" id="opt-light">Light</option>
+                            <option value="dark" id="opt-dark">Dark</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div id="tools-grid" class="tools-grid">
+                <!-- Tool cards will be injected here by app.js -->
+                <div class="loading-state">Loading tools...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p id="footer-note">Local-first tools for structured digital work.</p>
+            <p class="footer-meta">Mireflecta &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
